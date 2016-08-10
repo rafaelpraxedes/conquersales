@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> Sales Planning </title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <script src="../js/main.js" defer></script>
+    
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <header>
+            <h1 style="margin-top: 10px;">About / Help</h1>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    </div>
+                </div>
+        </header>            
+
+        <div class="row row-eq-height">
+            <div class="col-sm-2 well" id="gridLeftNav">
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-info-outline" id="btnBack" onclick="openPage('home')"> Back </button>
+                </div>
+                <p></p>
+            </div>
+            <div class="col-sm-10 well" id="gridMain">
+                <div id="aboutContainer">
+                    <h3 style="margin:0;">Sales Planning Tool</h3>
+                    <br/>
+                    <p>Developed by Rafael Praxedes Soares for Langara course 2030 - Web Development II.</p>
+                    <p>July 2016 - version 1.1.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row row-eq-height">
+            <div class="col-sm-2 well" id="gridLeftNav">
+                <p>Servername: j43.ca</p>
+                <p>Username: catsoul1_php</p>
+                <p>Database: catsoul1_phpDB</p>                
+                <p><a href="../database/Sales%20Planning-ER.png">Database Model</a></p>
+            </div>
+            <div class="col-sm-10 well" id="gridMain">
+                <div id="helpContainer">
+                    <h3 style="margin:0;">Help</h3> <p></p>
+                    <p>Sales Planning has a visual and flexible model in order to boost the sales management of your company.
+                        It has two main entities: Nodes and their Attributes and two main relations: Attributes for each Level and Nodes and their Attributes. </p>
+                    <ul>
+                        <li><p><u>Nodes</u>: Stand for any kind of group of information you may want to design and manage in a visual way (eg. Country, Industry, Stakeholders, etc). This version has 4 level of Nodes. Each level can be linked with levels immediately higher or lower, creating an hierarchy of parents and their childs. All possible associations: 
+                            <lu>
+                                <li style="margin-left: 50px;">Node Level 1 (higher): can be parent of Node Level 3</li>
+                                <li style="margin-left: 50px;">Node Level 2: can be child of Node Level 1 and parent of Node Level 2</li>
+                                <li style="margin-left: 50px;">Node Level 3: can be child of Node Level 2 and parent of Node Level 4</li>
+                                <li style="margin-left: 50px;">Node Level 4 (lower): can be child of Node Level 3</li>
+                            </lu>
+                            </p>
+                        </li>
+                        <li>
+                            <p><u>Attributes</u>: Stand for any unit of information you need to manage (eg. budget, resposible, sales target, etc. All Attributes are created independently. After, they can be associated with Levels and finally with Nodes themselves, where are stored the actual information you provide.</p>
+                        </li>
+                        <li>
+                            <p><u>Association between Attributes and Levels</u>: Metadata association between attributes and each level. You must do this association in order to use the Attributes with actual Nodes.</p>                        </li>
+                        <li>
+                            <p><u>Association between Nodes and Attributes</u>: Actual information you store in the Attributes when you create a Node.</p>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p>This current version has 3 pages as follows:</p>
+                    <ul>
+                        <li><p><u>Main page (Nodes management)</u>: Create actual Nodes, make association among them and register actual information in attributes of each Node.</p></li>
+                        <li><p><u>Attributes Registration</u>: Manage all attributes (create, update and remove).</p></li>
+                        <li><p><u>Node Level & Attributes Association</u>: Associate each attribute among the 4 levels of Nodes.</p></li>
+                    </ul>
+                    <hr>
+                    <p>Version Note: although the model and database has entities related to People and Teams (and associations), this version don't provide functionalities to manage this entities. It will be provided in the next version of Sales Planning. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
