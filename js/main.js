@@ -636,7 +636,7 @@
         
         var request = $.ajax({
             url: "php/nodesModel.php",
-            method: "POST",
+            method: "*",
             data: { operation: oper, objAttribute: json_obj },
             dataType: "html"
         });
@@ -702,7 +702,7 @@
         
         var request = $.ajax({
             url: "php/nodesModel.php",
-            method: "POST",
+            method: "*",
             data: { operation: 'insert', objAttribute: json_obj },
             dataType: "html"
         });
@@ -752,7 +752,7 @@
         
         var request = $.ajax({
             url: "php/nodesModel.php",
-            method: "POST",
+            method: "*",
             data: { operation: 'update', objAttribute: json_obj },
             dataType: "html"
         });
@@ -803,7 +803,7 @@
         
         var request = $.ajax({
             url: "php/nodesModel.php",
-            method: "POST",
+            method: "*",
             data: { operation: 'delete', objAttribute: json_obj },
             dataType: "html"
         });
