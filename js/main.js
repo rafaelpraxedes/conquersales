@@ -635,8 +635,8 @@
         var json_obj = "";
         
         var request = $.ajax({
-            url: "php/nodesModel.php",
-            method: "*",
+            url: "https://rafaelpraxedes.github.io/conquersales/php/nodesModel.php",
+            method: "POST",
             data: { operation: oper, objAttribute: json_obj },
             dataType: "html"
         });
@@ -701,8 +701,8 @@
         var json_obj = JSON.stringify(arrayNodesNew); //Stringify to JSON
         
         var request = $.ajax({
-            url: "php/nodesModel.php",
-            method: "*",
+            url: "https://rafaelpraxedes.github.io/conquersales/php/nodesModel.php",
+            method: "POST",
             data: { operation: 'insert', objAttribute: json_obj },
             dataType: "html"
         });
@@ -751,8 +751,8 @@
         var json_obj = JSON.stringify(arrayNodesNew); //Stringify to JSON
         
         var request = $.ajax({
-            url: "php/nodesModel.php",
-            method: "*",
+            url: "https://rafaelpraxedes.github.io/conquersales/php/nodesModel.php",
+            method: "POST",
             data: { operation: 'update', objAttribute: json_obj },
             dataType: "html"
         });
@@ -802,8 +802,8 @@
         var json_obj = JSON.stringify(arrayNodesNew); //Stringify to JSON
         
         var request = $.ajax({
-            url: "php/nodesModel.php",
-            method: "*",
+            url: "https://rafaelpraxedes.github.io/conquersales/php/nodesModel.php",
+            method: "POST",
             data: { operation: 'delete', objAttribute: json_obj },
             dataType: "html"
         });
